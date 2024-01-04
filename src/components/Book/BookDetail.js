@@ -37,10 +37,12 @@ const BookDetail = () => {
       })
       .then((res) => res.data);
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     sendRequest().then(() => history("/books"));
   };
+
   const handleChange = (e) => {
     setInputs((prevState) => ({
       ...prevState,

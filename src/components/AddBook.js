@@ -18,7 +18,6 @@ const AddBook = () => {
     description: "",
     price: "",
     author: "",
-
     image: "",
   });
   const [checked, setChecked] = useState(false);
@@ -45,7 +44,7 @@ const AddBook = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(inputs, checked);
+    // console.log(inputs, checked);
     sendRequest().then(() => history("/books"));
   };
 
